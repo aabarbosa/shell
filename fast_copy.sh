@@ -13,10 +13,10 @@ for j in `find $1 -name \*.epub`
 do 
 	BASENAME=`basename $j`
 	if [ -e $DIR_PATH/$BASENAME ]; then
-		cp $j $DIR_PATH
-	else 
-		mkdir "./shadow/$REP_NUMBER"
-		cp $j $DIR_PATH/REP_NUMBER
-		$REP_NUMBER++
+		rsync $j $DIR_PATH/$REP_NUMBER
+		REP_NUMBER=$((REP_NUMBER+1))
+
+	else
+		cp $j $DIR_PATH 
 	fi
 done
