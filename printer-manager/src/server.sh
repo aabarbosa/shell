@@ -1,39 +1,32 @@
-./utils.sh --source-only
-enum ()
-{
-    shift
-    I=${@##*\{} # get string after { 
-    I=${I%\}*} # get string before }
-    I=${I//,/}  
+source ./utils.sh
 
-    local PROCESS=0
-    for INDEX in $I ; do
-        eval "$INDEX=$PROCESS"
-        ((PROCESS++))
-    done
-}
-enum index { NEW_JOB, UPDATE, ERROR, EXIT };
+> ./files/event
 
-PROCESS=NEW_JOB
-tail -f ./files/log | 
-grep --line-buffered 'New Job queued...' | 
-while read ; 
+tail -f ./files/event | 
+egrep --line-buffered 'print*|report'| 
+while read EVENT ;
     do 
-        case $PROCESS in  
-            NEW_JOB )
-                echo "Checks new cote information"
-                echo "code is $PROCESS"
+        case $EVENT in  
+            print* )
+                while : 
+                do
+                    echo "Digit one filepath to print. Press enter again"
+                    read location
+                    echo "Sending..."
+                    lp $location
+                    echo "Calculating how much you used this month..."
+                    MARK=( `lpq | tail -1` )
+                    echo ${MARK[4]}
+                    #awk '{}' ./files/users
+                done
             ;;
-            UPDATE )
-                echo "Runs awk and Update cote information"
-                echo "code is $PROCESS"
+            report )
+                echo "Reporting | Number of events"s
+                cat ./files/event | wc -l | uniq
             ;;  
-            ERROR )
-                echo "Exits for any bad behaviors"
-                echo "code is $PROCESS"
-            ;;
-            EXIT )
-                echo "is $PROCESS"
-            ;;  
+            * )
+                echo "mamamia This is a crazy."
         esac  
     done
+
+exit 0

@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # This bash is to export function and other support
-
-enum ()
+set -a
+function enum ()
 {
+
     shift
     I=${@##*\{} # get string after { 
     I=${I%\}*} # get string before }
@@ -14,4 +15,25 @@ enum ()
         eval "$INDEX=$PROCESS"
         ((PROCESS++))
     done
+
+}
+
+
+function cleanEvents () 
+{
+
+    echo "Cleaning old events"
+    lpq
+    cancel -a
+
+    echo "Done."
+    lpq
+
+}
+
+function resetLog () {
+
+    #rm -f ./files/log
+    #touch ./files/log
+    echo "" > ./files/log
 }
