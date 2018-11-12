@@ -1,39 +1,16 @@
 #!/bin/bash
 
-# This bash is to export function and other support
-set -a
-function enum ()
-{
+# This bash is to export functions, cron, monthly report.
 
-    shift
-    I=${@##*\{} # get string after { 
-    I=${I%\}*} # get string before }
-    I=${I//,/}  
-    ((DEBUG)) && echo $I
-    local PROCESS=0
-    for INDEX in $I ; do
-        eval "$INDEX=$PROCESS"
-        ((PROCESS++))
-    done
-
-}
-
-
-function cleanEvents () 
-{
-
-    echo "Cleaning old events"
-    lpq
-    cancel -a
-
-    echo "Done."
-    lpq
-
-}
-
-function resetLog () {
-
+function reset-log () {
     #rm -f ./files/log
     #touch ./files/log
     echo "" > ./files/log
+}
+
+
+function export.cron { 
+    cat <<EOF > files/export.cron
+0 0 1 * * root ../print.sh --set-monthly-cote
+EOF
 }
