@@ -5,12 +5,14 @@ Easily limit pages and toner use in a Printer Device
 
 #### Behaviors
 
-1. Monthly log (number of printed pages and # of files)
-2. Users can only use a total of 204800 bytes
-3. The new monthly cote is 204800 bytes for each user. 
-4. Consider a previous limit above 204800 and update monthly cote 
-5. The system provides parameters User information
+1. Each month a log is generated with page # and files printed
+2. Users can set a monthly quote of page limit
+3. This new monthly quote consider a plus of the limit of pages. 
+4. Quote above limit is discounted in the next month 
+5. The systems provide parameters for user information
 
+
+>>deprecated (all below this flag)
 #### How to run
 
 #### Installation

@@ -1,1 +1,1 @@
-0 0 1 * * root .utils.sh --set-monthly-cote
+0 0 1 * * root ../pm.sh --report

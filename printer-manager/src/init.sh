@@ -1,33 +1,41 @@
-#!/bin/bash
+source src/log/help.sh
+source src/utils.sh
+source src/log/log.sh
 
-source logs/help.sh
+tmp=src/log/tmp
+file=src/files
 
 function init {
+    help -cote
     init-cote
     init-users
+    export.cron
 }
 
 function init-cote {
-    echo -n  "Give <cote> [page prints per month]"
-    echo ":"
+    log -input
     read cote
     if [[ ! $cote =~ ^[0-9]+$ ]] ; then
-        help -wrong
+        log -wrong
     else 
-        echo "Setting" $cote
+        log -success
+        echo $cote >> $tmp
+        mv -f $tmp $file/cote 
     fi
 }
 
 function init-users {
     # Initialize users
-    FILE="files/USERS"
-    touch FILE
-    echo "user cote" > $FILE
-    ls /home >> $FILE
+    touch $tmp
+    echo "user quote" > $tmp
+    ls /home >> $tmp
 
-    # At the end of each line put the user monthly cote.
-    # A page contains 3600 characters or 1024 b
-    # 40 users at maximum
-    sed -i '2,41s/$/ 0/' $FILE >> $FILE
+    # At the end of each line put the user quote.
+    # 40 users at maximum      
+    sed -i '2,41s/$/ 0/' $tmp >> $tmp
+    mv -f $tmp $file/users
+
+    show-actual-table
 }
 
+init
