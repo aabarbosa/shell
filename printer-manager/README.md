@@ -8,9 +8,11 @@ Easily limit pages and toner use in a Printer Device
 1. Each month a log is generated with page # and files printed
 2. Users can set a monthly quote of page limit
 3. This new monthly quote consider a plus of the limit of pages. 
-4. Use above limit is discounted in the next month 
-5. The system provides parameters for the user information
+4. Quote above limit is discounted in the next month 
+5. The systems provide parameters for user information
 
+
+>>deprecated (all below this flag)
 #### How to run
 
 #### Installation
