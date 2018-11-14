@@ -1,0 +1,6 @@
+How to checkout all files ( saver | hero )
+also How to recover staged files after a disaster.
+
+```code
+git checkout -- ..
+```

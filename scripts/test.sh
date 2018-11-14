@@ -24,7 +24,6 @@ do
 		;;
 	*)
 		echo "Sorry, you typed a wrong input." \ 
-        echo "Try again. I know you can!"
 		;;
   esac
 done

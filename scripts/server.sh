@@ -1,4 +1,4 @@
-source print.sh
+source pm.sh
 
 reset-log
 
