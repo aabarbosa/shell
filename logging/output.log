@@ -1,0 +1,28 @@
+real 0m0.091s user 0m0.044s sys 0m0.024s
+real 0m0.090s user 0m0.032s sys 0m0.034s
+./init.sh: line 6: chrome: command not found real 0m0.001s user 0m0.000s sys 0m0.001s
+./init.sh: line 6: mozilla: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.088s user 0m0.056s sys 0m0.007s
+./init.sh: line 6: vince: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+./init.sh: line 6: giit: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.002s user 0m0.002s sys 0m0.000s
+real 0m0.002s user 0m0.002s sys 0m0.000s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+./init.sh: line 9: e: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.002s user 0m0.002s sys 0m0.000s
+real 0m0.002s user 0m0.002s sys 0m0.000s
+./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.087s user 0m0.047s sys 0m0.017s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+./init.sh: line 9: sdfsd: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.095s user 0m0.057s sys 0m0.009s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
+real 0m0.090s user 0m0.039s sys 0m0.027s
+real 0m0.088s user 0m0.048s sys 0m0.017s
+real 0m0.000s user 0m0.000s sys 0m0.000s
+real 0m0.086s user 0m0.044s sys 0m0.016s
