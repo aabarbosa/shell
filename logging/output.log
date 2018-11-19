@@ -1,28 +1,9 @@
-real 0m0.091s user 0m0.044s sys 0m0.024s
-real 0m0.090s user 0m0.032s sys 0m0.034s
-./init.sh: line 6: chrome: command not found real 0m0.001s user 0m0.000s sys 0m0.001s
-./init.sh: line 6: mozilla: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.088s user 0m0.056s sys 0m0.007s
-./init.sh: line 6: vince: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-./init.sh: line 6: giit: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.002s user 0m0.002s sys 0m0.000s
-real 0m0.002s user 0m0.002s sys 0m0.000s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-./init.sh: line 9: e: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.002s user 0m0.002s sys 0m0.000s
-real 0m0.002s user 0m0.002s sys 0m0.000s
-./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.087s user 0m0.047s sys 0m0.017s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-./init.sh: line 9: sdfsd: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.095s user 0m0.057s sys 0m0.009s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-./init.sh: line 9: fsdf: command not found real 0m0.001s user 0m0.001s sys 0m0.000s
-real 0m0.090s user 0m0.039s sys 0m0.027s
-real 0m0.088s user 0m0.048s sys 0m0.017s
-real 0m0.000s user 0m0.000s sys 0m0.000s
-real 0m0.086s user 0m0.044s sys 0m0.016s
+Mon Nov 19 14:54:04 -03 2018 real 0m0.518s user 0m0.048s sys 0m0.021s
+Mon Nov 19 14:58:08 -03 2018 real 0m0.093s user 0m0.050s sys 0m0.024s
+Mon Nov 19 14:59:48 -03 2018 real 0m0.083s user 0m0.046s sys 0m0.020s
+Mon Nov 19 14:59:50 -03 2018 ./init.sh: linha 9: chrome: comando não encontrado real 0m0.001s user 0m0.001s sys 0m0.000s
+Mon Nov 19 15:00:00 -03 2018 Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0 Gtk-Message: 15:00:01.665: Failed to load module "canberra-gtk-module" Gtk-Message: 15:00:01.871: Failed to load module "canberra-gtk-module" real 0m6.604s user 0m0.249s sys 0m0.099s
+Mon Nov 19 15:15:53 -03 2018 firefox real 0m0.090s user 0m0.036s sys 0m0.030s
+Mon Nov 19 15:16:05 -03 2018 cd real 0m0.000s user 0m0.000s sys 0m0.000s
+Mon Nov 19 15:16:08 -03 2018 ls real 0m0.002s user 0m0.002s sys 0m0.000s
+Mon Nov 19 15:16:58 -03 2018 firefox real 0m0.088s user 0m0.056s sys 0m0.014s
