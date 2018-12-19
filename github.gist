@@ -1,0 +1,13 @@
+How to checkout all files ( saver | hero )
+also How to recover staged files after a disaster.
+
+```code
+git checkout -- ..
+```
+
+
+# How to mirror a github repository
+git clone --mirror <repoURL>
+cd <repo>
+git remote add newmaster <newRepo>
+git push newmaster --mirror
